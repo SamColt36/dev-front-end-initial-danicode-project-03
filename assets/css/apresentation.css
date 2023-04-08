@@ -1,0 +1,109 @@
+.container-superior header {
+    display: grid;
+    grid-template-areas:
+        'txt circles'
+        'button circles';
+}
+
+.apresentation {
+    grid-area: txt;
+    width: var(--main-width-apresentation);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.apresentation h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+    color: var(--main-color-white);
+}
+
+.apresentation h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    width: 50%;
+    padding: 10px 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: rgba(201, 201, 201, 0.219);
+}
+
+.apresentation h3 span {
+    color: rgba(201, 201, 201, 0.6);
+}
+
+.container-superior header a {
+    grid-area: button;
+    margin: 20px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    display: block;
+    width: 25%;
+    height: 3rem;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 3rem;
+    background-color: var(--main-color-orange);
+    color: var(--main-color-white);
+}
+
+.container-circles {
+    width: calc(100% - var(--main-width-apresentation));
+    height: auto;
+    flex-direction: column;
+    grid-area: circles;
+}
+
+.container-circles>* {
+    display: block;
+}
+
+.container-circles span:nth-child(1) {
+    background-color: var(--main-color-orange);
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color-orange);
+}
+
+.line {
+    width: 1px;
+    height: 40px;
+    background-color: var(--main-color-white);
+    opacity: .5;
+}
+
+/*MOBILE*/
+@media only screen and (min-width: 320px) and (max-width: 475px) {
+    .container-superior header {
+        display: grid;
+        grid-template-areas: 'txt' 'button';
+    }
+
+    .apresentation {
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    .apresentation h1 {
+        font-size: 2.5rem;
+    }
+
+    .apresentation h3 {
+        width: 60%;
+    }
+
+    .container-superior header a {
+        height: 3rem;
+        font-size: 1rem;
+        line-height: 3rem;
+    }
+
+    .container-circles {
+        display: none;
+    }
+}
