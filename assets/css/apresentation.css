@@ -11,11 +11,13 @@
     display: flex;
     flex-direction: column;
     align-items: left;
+    flex-wrap: nowrap;
 }
 
 .apresentation h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 4rem;
+    width: max-content;
     color: var(--main-color-white);
 }
 
@@ -39,7 +41,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     display: block;
-    width: 25%;
+    width: 20%;
     height: 3rem;
     text-align: center;
     font-size: 1rem;
@@ -49,7 +51,7 @@
 }
 
 .container-circles {
-    width: calc(100% - var(--main-width-apresentation));
+    width: max-content;
     height: auto;
     flex-direction: column;
     grid-area: circles;
@@ -59,7 +61,7 @@
     display: block;
 }
 
-.container-circles span:nth-child(1) {
+.actived {
     background-color: var(--main-color-orange);
 }
 
@@ -78,32 +80,48 @@
 }
 
 /*MOBILE*/
-@media only screen and (min-width: 320px) and (max-width: 475px) {
+@media only screen and (max-width: 767px) {
     .container-superior header {
         display: grid;
         grid-template-areas: 'txt' 'button';
     }
 
     .apresentation {
-        margin-top: 100px;
         width: 100%;
     }
 
+    /* Banner antes da div .apresentation 
+    .apresentation::before {
+        content: "";
+        width: 100%;
+        height: 100px;
+        background-image: url(../img/background-header-mobile.jpg);
+        background-size: cover;
+        background-position: center top;
+    }
+    */
     .apresentation h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        width: max-content;
     }
 
     .apresentation h3 {
-        width: 60%;
+        width: 80%;
     }
 
     .container-superior header a {
         height: 3rem;
         font-size: 1rem;
         line-height: 3rem;
+        width: 35%;
     }
 
     .container-circles {
         display: none;
     }
+}
+
+/*TABLET*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    
 }
