@@ -12,20 +12,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Raleway:wght@200;300;400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=Open+Sans:wght@300;400;500;600&family=Raleway:wght@200;300;400&display=swap"
         rel="stylesheet">
     <!--Arquivos de estilo-->
     <link rel="stylesheet" href="./assets/css/defaults.css">
     <link rel="stylesheet" href="./assets/css/apresentation.css">
     <link rel="stylesheet" href="./assets/css/skills.css">
+    <link rel="stylesheet" href="./assets/css/professional.css">
     <title>Document</title>
     </style>
 </head>
 
 <body>
-    <!--container-superior deve conter todos os elementos da página-->
+    <!--container-superior deve conter todos os elementos principais da página-->
     <div class="container-superior">
-        <header>
+        <header id="header">
             <div class="apresentation">
                 <h1>Olá, eu sou<br> um Dev Front end</h1>
                 <h3>me chamo Samuel, tenho 21 anos. Sou estudante de <span>Coding</span> na UNINASSAU e sou apaixonado
@@ -33,22 +34,25 @@
                     mundo tech e suas possibilidades.</h3>
                 <!--Escrever em href a seção que ira direcionar ao clicar-->
             </div>
-            <a href="seção-posterois">Explorar</a>
+            <a href="">Explorar</a>
+
             <div class="container-circles flex-center">
-                <!--Adicionar a quantidade de span correspondente ao número de seções na página-->
                 <span class="circle actived"></span>
                 <span class="line"></span>
                 <span class="circle"></span>
                 <span class="line"></span>
                 <span class="circle"></span>
-
+                <span class="line"></span>
+                <span class="circle"></span>
             </div>
         </header>
+
         <!--Paralax-->
         <span class="paralax flex-center">
             <img src="./assets/img/paralax.png" alt="imagem alusiva a um escritório">
         </span>
-        <!--Container Hard Skills-->
+
+        <!--Container Skills-->
         <section class="container-skills">
             <div class="skills-title">
                 <h3>Hard Skills & Soft Skills</h3>
@@ -69,10 +73,7 @@
                             <img src="./assets/img/java-icon.png" alt="Java logo">
                         </figure>
                         <p>Java & OO</p>
-                        <p>Linguagem de alto nível utilizada para desenvolvimento de software em geral
-                            com
-                            foco em
-                            Orientada a Objetos.</p>
+                        <p>Linguagem de alto nível utilizada para desenvolvimento de software.</p>
                     </div>
 
                     <div class="content-skill">
@@ -104,28 +105,118 @@
                             <img src="./assets/img/scrum-icon.png" alt="Framework Scrum logo">
                         </figure>
                         <p>Scrum</p>
-                        <p>Metodologia ágil de desenvolvimento de software para entrega de projetos de forma
-                            colaborativa e eficiente.</p>
+                        <p>Framework de desenvolvimento de software para entrega de projetos de forma incremental.</p>
                     </div>
-                     <!--Soft Skills-->
+                    <!--Soft Skills-->
                     <div class="content-skill soft-skills">
                         <figure>
-                            <img src="./assets/img/logica-icon.png" alt="Lógica de programação ícone">
+                            <img src="./assets/img/intuitivo-icon.png" alt="Ícone alusivo a uma lâmpada">
                         </figure>
-                        <p>Intuitivo</p>
-                        <p>Habilidade em resolver problemas de programação de forma eficiente e estruturada.</p>
+                        <p>Ética</p>
+                        <p>Conjunto de princípios e valores que orientam a conduta pessoal e profissional.</p>
+                    </div>
+
+                    <div class="content-skill soft-skills">
+                        <figure>
+                            <img src="./assets/img/flexibility-icon.png" alt="Ícone alusivo à seta com várias direções">
+                        </figure>
+                        <p>Flexibilidade</p>
+                        <p>Capacidade de se adaptar a diferentes situações, mudanças e demandas.</p>
+                    </div>
+
+                    <div class="content-skill soft-skills">
+                        <figure>
+                            <img src="./assets/img/organization-icon.png"
+                                alt="Ícone alusivo à um quebra cabeça que indica o tema organização">
+                        </figure>
+                        <p>Organização</p>
+                        <p>Habilidade em planejar e gerenciar tarefas e recursos de forma eficiente e eficaz.</p>
+                    </div>
+
+                    <div class="content-skill soft-skills">
+                        <figure>
+                            <img src="./assets/img/empatia-icon.png" alt="Ícone alusivo à pessoas empáticas">
+                        </figure>
+                        <p>Empatia</p>
+                        <p>Habilidade de compreender as emoções, necessidades e perspectivas dos outros.</p>
                     </div>
                 </div>
 
-                <div class="container-circles flex-center" id="hsc">
-                    <!--Adicionar a quantidade de span correspondente ao número de seções na página-->
+                <div class="container-circles flex-center">
                     <span class="circle"></span>
                     <span class="line"></span>
                     <span class="circle actived"></span>
                     <span class="line"></span>
                     <span class="circle"></span>
-
+                    <span class="line"></span>
+                    <span class="circle"></span>
                 </div>
+            </div>
+        </section>
+
+        <!--Container Professional-->
+        <section class="container-professional">
+            <div class="skills-title">
+                <h3>Experience</h3>
+                <h2>Work & Education</h2>
+            </div>
+            <div class="content-professional flex-center">
+                <figure class="more flex-center">
+                    <img src="./assets/img/more-icon.png" alt="Conteúdo ao lado" title="Scroll">
+                </figure>
+
+                <div class="flex-center">
+                    <div class="section-professional">
+                        <h3>2016-2018</h3>
+                        <h3>Profissionalizante</h3>
+                        <h2>EEEP Presidente Roosevelt</h2>
+                        <p>Técnico em Edificações</p>
+                    </div>
+
+                    <div class="section-professional">
+                        <h3>2019-2020</h3>
+                        <h3>Profissionalizante</h3>
+                        <h2>Prepara Cursos</h2>
+                        <p>Design Gráfico</p>
+                    </div>
+
+                    <div class="section-professional">
+                        <h3>2022-2024
+                        </h3>
+                        <h3>Graduação Tecnológica</h3>
+                        <h2>Uninassau</h2>
+                        <p>Coding</p>
+                    </div>
+
+                    <div class="section-professional">
+                        <h3>2022</h3>
+                        <h3>Curso livre</h3>
+                        <h2>Digital Inovation One - DIO</h2>
+                        <p>Lógica de programação essencial</p>
+                        <p>Conceitos de responsvidade e UX</p>
+                        <p>Projetos ágeis com Scrum</p>
+                    </div>
+
+                    <div class="section-professional">
+                        <h3>2023</h3>
+                        <h3>Curso Livre</h3>
+                        <h2>Udemy</h2>
+                        <p>Java & OO</p>
+                        <h>Digital Inovation One - DIO</h>
+                        <p>Linux: A introdução ao SO</p>
+                    </div>
+                </div>
+
+                <div class="container-circles flex-center">
+                    <span class="circle"></span>
+                    <span class="line"></span>
+                    <span class="circle"></span>
+                    <span class="line"></span>
+                    <span class="circle actived"></span>
+                    <span class="line"></span>
+                    <span class="circle"></span>
+                </div>
+
             </div>
         </section>
     </div>

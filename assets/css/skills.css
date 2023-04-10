@@ -47,10 +47,23 @@
     box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.09);
     -webkit-box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.09);
     -moz-box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.09);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.content-skill:hover {
+    box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.4);
 }
 
 .soft-skills {
-    background-color: var(--main-color-orange);
+    background-color: #373950;
+    ;
+}
+
+.soft-skills p {
+    color: var(--main-color-white);
 }
 
 .content-skill figure {
@@ -62,9 +75,11 @@
 .content-skill figure img {
     height: 100%;
 }
+
 .content-skill p:not(.soft-skills p) {
     color: var(--main-color-white);
 }
+
 .content-skill p:first-of-type {
     font-weight: 500;
     font-size: 1rem;
@@ -75,11 +90,9 @@
     font-weight: 500;
     font-size: .8rem;
     height: 5rem;
+    line-height: 1rem;
 }
 
-.soft-skills * p {
-    color: #2B2D41;
-}
 /*MOBILE*/
 @media only screen and (min-width: 320px) and (max-width: 475px) {
     .skills-main {

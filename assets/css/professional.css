@@ -1,0 +1,112 @@
+.container-professional {
+    position: relative;
+}
+
+.content-professional {
+    height: max-content;
+    background-color: #2B2D41;
+    justify-content: left;
+    position: relative;
+    box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.09);
+}
+
+.more {
+    display: none;
+    height: max-content;
+    width: 100%;
+    justify-content: right;
+}
+
+.more img {
+    height: 30px;
+    margin: 20px;
+}
+
+.content-professional>div:first-of-type {
+    width: var(--main-width-apresentation);
+    position: relative;
+    padding: 50px;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: left;
+    mask-image: linear-gradient(to right, #000, rgba(255, 0, 0, 0));
+    -webkit-mask-image: linear-gradient(to right, #000000 90%, rgba(255, 255, 255, 0.1));
+}
+
+/* Estilização do scroll */
+.content-professional>div:first-of-type::-webkit-scrollbar {
+    height: .5rem;
+}
+
+.content-professional>div:first-of-type::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.content-professional>div:first-of-type::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.content-professional>div:first-of-type::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.section-professional {
+    margin: 30px 10px;
+    background-color: #373950;
+    padding: 20px;
+    height: var(--main-box-work);
+    width: var(--main-box-work);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.section-professional>*:not(.section-professional p) {
+    color: var(--main-color-white);
+    padding: 5px 0;
+}
+
+.section-professional h3:first-of-type {
+    font-size: 2rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+}
+
+.section-professional h3:last-of-type {
+    font-size: 1rem;
+}
+
+.section-professional h2 {
+    opacity: .8;
+}
+
+.section-professional p {
+    opacity: .5;
+    color: var(--main-color-white);
+}
+
+.section-professional h2,
+.section-professional p {
+    font-weight: 400;
+    font-size: .85rem;
+}
+
+/*MOBILE*/
+@media only screen and (min-width: 320px) and (max-width: 475px) {
+    .more {
+        display: flex;
+        justify-content: right;
+    }
+
+    .content-professional>div:first-of-type {
+        padding: 0 100px 50px 50px;
+    }
+
+}
