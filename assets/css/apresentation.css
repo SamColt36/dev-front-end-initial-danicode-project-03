@@ -66,8 +66,8 @@
 }
 
 .circle {
-    width: 20px ;
-    height: 20px ;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     border: 2px solid var(--main-color-orange);
 }
@@ -89,17 +89,7 @@
     .apresentation {
         width: 100%;
     }
-
-    /* Banner antes da div .apresentation 
-    .apresentation::before {
-        content: "";
-        width: 100%;
-        height: 100px;
-        background-image: url(../img/background-header-mobile.jpg);
-        background-size: cover;
-        background-position: center top;
-    }
-    */
+    
     .apresentation h1 {
         font-size: 2.2rem;
         width: max-content;
@@ -122,6 +112,4 @@
 }
 
 /*TABLET*/
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    
-}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {}
