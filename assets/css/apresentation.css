@@ -89,7 +89,7 @@
     .apresentation {
         width: 100%;
     }
-    
+
     .apresentation h1 {
         font-size: 2.2rem;
         width: max-content;
@@ -110,6 +110,3 @@
         display: none;
     }
 }
-
-/*TABLET*/
-@media only screen and (min-width: 768px) and (max-width: 1023px) {}

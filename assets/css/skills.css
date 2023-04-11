@@ -3,6 +3,12 @@
     height: max-content;
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+.skills-title {
+    position: inherit;
+    width: 100%;
 }
 
 .skills-title h3 {
@@ -59,7 +65,6 @@
 
 .soft-skills {
     background-color: #373950;
-    ;
 }
 
 .soft-skills p {
