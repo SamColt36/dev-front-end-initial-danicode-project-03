@@ -28,7 +28,6 @@
     background-color: #2B2D41;
     color: var(--main-color-white);
     font-size: 1.25rem;
-    cursor: pointer;
 }
 
 .contact-content form input::placeholder {
