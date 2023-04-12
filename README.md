@@ -11,7 +11,7 @@ O objetivo deste projeto é criar um currículo em formato de site, utilizando a
 
 -   🌟 Acessibilidade nas tags
 -   🌟 Layout fluido e responsivo
--   🌟 Adaptabilidade para diferentes tamanhos de tela
+-   🌟 Formulário totalmente funcional
 
 ## Como Acessar o Projeto
 
