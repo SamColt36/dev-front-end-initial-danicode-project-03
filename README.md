@@ -5,7 +5,7 @@
 
 🚀 Bem-vindo ao meu projeto curriculum do curso Front-End da formação **Full Stack** - DaniCode! 🚀
 
-O objetivo deste projeto é criar um currículo em formato de site, utilizando apenas as tecnologias HTML e CSS. O site deve conter informações sobre a formação acadêmica, experiência profissional, habilidades técnicas e projetos pessoais do candidato. [link](https://www.behance.net/gallery/97205839/Developer-Portfolio-Design).
+O objetivo deste projeto é criar um currículo em formato de site, utilizando apenas as tecnologias HTML e CSS. O site deve conter informações sobre a formação acadêmica, experiência profissional, habilidades técnicas e projetos pessoais do candidato [link](https://www.behance.net/gallery/97205839/Developer-Portfolio-Design).
 
 ## Sobre a Página
 
