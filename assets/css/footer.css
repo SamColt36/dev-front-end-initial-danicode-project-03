@@ -1,40 +1,25 @@
-.rodape {
-    margin-top: 200px;
-}
-
 footer * {
     background-color: #121212;
 }
 
-footer div:first-of-type {
-    color: var(--main-color-white);
-
-    margin-top: 200px;
-    padding: 50px;
-}
-
-footer div:first-of-type h1 {
-    padding: 0 50px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
-}
-
-footer div:first-of-type span {
-    width: 1px;
-    height: 5rem;
-    background-color: var(--main-color-white);
-    opacity: .2;
-    margin: 20px 0;
-}
-
 footer section {
-    margin: 20px 0;
-    padding: 0 50px;
+    padding: 50px;
 }
 
 footer section a:not(footer section a:last-of-type) {
     position: relative;
     margin-right: 10px;
+}
+
+footer section a {
+    border: 1px solid var(--main-color-white);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
 }
 
 footer section a img {
@@ -55,8 +40,8 @@ footer div:last-of-type p a {
 
 /*MOBILE*/
 @media only screen and (min-width: 320px) and (max-width: 475px) {
-    footer div:first-of-type span {
-        display: none;
+    footer {
+        margin-top: 200px;
     }
 
     footer div:last-of-type p {

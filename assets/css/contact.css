@@ -1,6 +1,13 @@
 .contact {
-    height: max-content;
     margin-top: 200px;
+    height: max-content;
+    position: relative;
+}
+
+.contact::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .contact h1 {
@@ -9,9 +16,6 @@
     margin: 20px 0;
 }
 
-.contact-content {
-    position: relative;
-}
 
 .contact-content form {
     width: var(--main-width-apresentation);
