@@ -3,7 +3,7 @@
 
 # Projeto Curriculum do Curso de Formação Front-end DaniCode
 
-🚀 Bem-vindo ao meu projeto curriculum do curso Front-End da formação **Full Stack** - DaniCode! 🚀
+🚀 Bem-vindo ao meu projeto curriculum do curso Front-End da formação **Full Stack** - DankiCode! 🚀
 
 O objetivo deste projeto é criar um currículo em formato de site, utilizando apenas as tecnologias HTML e CSS. O site deve conter informações sobre a formação acadêmica, experiência profissional, habilidades técnicas e projetos pessoais do candidato [link](https://www.behance.net/gallery/97205839/Developer-Portfolio-Design).
 
